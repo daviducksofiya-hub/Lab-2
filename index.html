@@ -2,91 +2,68 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Котики</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-
-<header class="header">
-    <div class="container header-container">
-        <div class="logo">MyPortfolio</div>
-
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Burger -->
-        <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</header>
 
 <main>
 
-    <!-- SECTION 1 -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <h1>Welcome to my portfolio</h1>
-                <p>Here are my latest projects</p>
+<section class="portfolio">
+    <div class="container">
+
+        <h2 class="title">Котики</h2>
+
+        <div class="card-wrap">
+
+            <!-- КОТИК 1 -->
+            <div class="card">
+                <img src="img/cat1.jpg" alt="Барсік">
+                <div class="card-content">
+                    <h3>Барсік</h3>
+                    <p>Дуже спокійний котик, любить спати і муркотіти.</p>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="https://picsum.photos/500/400" alt="">
+
+            <!-- КОТИК 2 -->
+            <div class="card">
+                <img src="img/cat2.jpg" alt="Мурчик">
+                <div class="card-content">
+                    <h3>Мурчик</h3>
+                    <p>Грайливий та веселий, обожнює бігати за м'ячиком.</p>
+                </div>
             </div>
+
+            <!-- КОТИК 3 -->
+            <div class="card">
+                <img src="img/cat3.jpg" alt="Сніжок">
+                <div class="card-content">
+                    <h3>Сніжок</h3>
+                    <p>Білий пухнастик, дуже ніжний і лагідний.</p>
+                </div>
+            </div>
+
+            <!-- 🔽 КОПІЮЙ ЦЕЙ БЛОК ДЛЯ НОВОГО КОТИКА -->
+            <!--
+            <div class="card">
+                <img src="img/your-cat.jpg" alt="Ім'я">
+                <div class="card-content">
+                    <h3>Ім'я</h3>
+                    <p>Короткий опис</p>
+                </div>
+            </div>
+            -->
+
         </div>
-    </section>
 
-    <!-- PORTFOLIO -->
-    <section class="portfolio">
-        <div class="container">
-            <h2 class="title">Portfolio</h2>
-
-            <div class="card-wrap">
-
-                <div class="card">
-                    <img src="https://picsum.photos/400/250" alt="">
-                    <div class="card-content">
-                        <h3>Project 1</h3>
-                        <p>Description</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://picsum.photos/401/250" alt="">
-                    <div class="card-content">
-                        <h3>Project 2</h3>
-                        <p>Description</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="https://picsum.photos/402/250" alt="">
-                    <div class="card-content">
-                        <h3>Project 3</h3>
-                        <p>Description</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
 </main>
 
-<script src="js/script.js"></script>
 </body>
 </html>

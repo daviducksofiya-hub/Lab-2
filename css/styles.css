@@ -3,77 +3,33 @@ body {
     background: #f5f5f5;
 }
 
-/* container */
+/* контейнер */
 .container {
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
-/* HEADER */
-.header {
-    background: white;
-    padding: 20px 0;
+/* заголовок */
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    gap: 30px;
-}
-
-.burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.burger span {
-    width: 25px;
-    height: 3px;
-    background: black;
-}
-
-/* HERO */
-.hero {
-    padding: 80px 0;
-}
-
-.hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-/* PORTFOLIO */
+/* секція */
 .portfolio {
     padding: 80px 0;
 }
 
-.title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
+/* сітка */
 .card-wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
+/* картка */
 .card {
     background: white;
     border-radius: 16px;
@@ -81,39 +37,34 @@ body {
     transition: 0.3s;
 }
 
+/* ефект */
 .card:hover {
     transform: translateY(-10px);
 }
 
+/* контент */
 .card-content {
     padding: 20px;
 }
 
 .card h3 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-/* ADAPTIVE */
+.card p {
+    color: #666;
+}
+
+/* адаптив */
 @media (max-width: 1000px) {
     .card-wrap {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero-container {
-        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 600px) {
     .card-wrap {
         grid-template-columns: 1fr;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .burger {
-        display: flex;
     }
 }
